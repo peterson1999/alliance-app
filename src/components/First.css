@@ -1,0 +1,16 @@
+.span {
+	color: "#0099CC";
+}
+
+.Body > .image {
+	height: 400px;
+	width: 400px;
+	margin-bottom: 30px;
+}
+
+.Body > .Identity > .section > .paragraph > .span1 {
+	color: #808080;
+}
+.Body > .License > .section > .paragraph > .span1 {
+	color: #808080;
+}
