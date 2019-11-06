@@ -27,7 +27,7 @@ class First extends Component {
 	};
 	render() {
 		return (
-			<div className="Body" style={{ marginLeft: 50 }}>
+			<div className="Body" style={{ marginLeft: 30 }}>
 				<div
 					className="image"
 					style={{
@@ -37,7 +37,7 @@ class First extends Component {
 						// border: 'solid',
 					}}
 				>
-					<img style={{ height: 400, width: 400 }} src={jungkook} />
+					<img style={{ height: '100%', width: '100%' }} src={jungkook} />
 				</div>
 				<div style={this.wrapper} className="wrapper">
 					<p style={{ marginBottom: 0, color: '#808080', fontSize: 20 }}>Identifying Information</p>

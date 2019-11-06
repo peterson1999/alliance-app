@@ -18,8 +18,8 @@ class PaymentCards extends Component {
 					<div
 						style={{
 							position: 'absolute',
-							bottom: 0,
-							right: '46%'
+							bottom: '-43%',
+							right: '43%'
 						}}
 					>
 						<Pagination />

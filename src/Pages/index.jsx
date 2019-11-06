@@ -8,11 +8,19 @@ class Index extends Component {
 		return (
 			<React.Fragment>
 				<Navbar />
+				<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
 				<main
-					style={{ marginTop: 110, float: 'left', width: '100%', height: '100%', paddingLeft: 60 }}
+					style={{
+						fontFamily: 'Roboto',
+						marginTop: 90,
+						float: 'left',
+						width: '100%',
+						height: '100%',
+						paddingLeft: 60
+					}}
 					class="row"
 				>
-					<div style={{ maxWidth: '50%' }} class="col-sm-3">
+					<div style={{ maxWidth: 400 }} class="col-sm-3">
 						<First />
 					</div>
 					<div style={{ marginLeft: 30 }} class="col-sm-8">
