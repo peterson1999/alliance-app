@@ -1,6 +1,22 @@
 import React, { Component } from 'react';
 class Pcards extends Component {
-	state = {};
+	state = {
+		card: {
+			date: {
+				month: 'October',
+				day: 9,
+				year: 2019
+			},
+			violation: 'Double Parking',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.',
+			Deadline: {
+				month: 'October',
+				day: 23,
+				year: 2019
+			},
+			fine: 10000
+		}
+	};
 	render() {
 		return (
 			<div style={{ marginBottom: 20, marginLeft: 10, borderRadius: 10, marginRight: 10 }} className="card">

@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 class Cards extends Component {
-	state = {};
+	state = {
+		card: {
+			date: {
+				month: 'October',
+				day: 9,
+				year: 2019
+			},
+			violation: 'Double Parking',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'
+		}
+	};
 	render() {
 		return (
 			<div style={{ marginBottom: 30 }} className="card">
@@ -8,9 +18,10 @@ class Cards extends Component {
 					{' '}
 					October 9, 2019
 				</div>
+
 				<div className="card-body">
 					<blockquote className="blockquote mb-0">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+						<p>{this.state.card.description}</p>
 					</blockquote>
 				</div>
 			</div>
