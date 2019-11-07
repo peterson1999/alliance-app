@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Image } from 'react-native';
 import jungkook from './jungkook-1.jpg';
 import './First.css';
 class First extends Component {
@@ -15,7 +14,7 @@ class First extends Component {
 	wrapper = {
 		display: 'flex',
 		alignItems: 'center',
-		marginBottom: 30
+		marginBottom: 17
 	};
 
 	line = {
@@ -37,13 +36,13 @@ class First extends Component {
 						// border: 'solid',
 					}}
 				>
-					<img style={{ height: '100%', width: '100%' }} src={jungkook} />
+					<img style={{ height: '100%', width: '100%' }} src={jungkook} alt="" />
 				</div>
 				<div style={this.wrapper} className="wrapper">
-					<p style={{ marginBottom: 0, color: '#808080', fontSize: 20 }}>Identifying Information</p>
-					<div style={this.line} class="line" />
+					<p style={{ marginBottom: 0, color: 'rgb(0, 178, 222)', fontSize: 17 }}>Identifying Information</p>
+					<div style={this.line} className="line" />
 				</div>
-				<div className="Identity" style={{ display: 'flex', flexDirection: 'row', marginBottom: 30 }}>
+				<div className="Identity" style={{ display: 'flex', flexDirection: 'row', marginBottom: 15 }}>
 					<div className="section" style={{ marginRight: 50, fontSize: 20 }}>
 						<p className="paragraph">
 							<span className="span1">First Name:</span> Peterson
@@ -70,8 +69,8 @@ class First extends Component {
 					</div>
 				</div>
 				<div style={this.wrapper} className="wrapper">
-					<p style={{ marginBottom: 0, color: '#808080', fontSize: 20 }}>License Information</p>
-					<div style={this.line} class="line" />
+					<p style={{ marginBottom: 0, color: 'rgb(0, 178, 222)', fontSize: 17 }}>License Information</p>
+					<div style={this.line} className="line" />
 				</div>
 				<div className="License" style={{ display: 'flex', flexDirection: 'row', marginBottom: 30 }}>
 					<div className="section" style={{ marginRight: 50, fontSize: 20 }}>

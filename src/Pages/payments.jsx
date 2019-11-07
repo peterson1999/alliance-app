@@ -6,11 +6,25 @@ class Payments extends Component {
 	render() {
 		return (
 			<React.Fragment>
+				<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
 				<Navbar />
-				<div style={{ textAlign: 'center', marginTop: 100 }}>
-					<h1>Which fee do you want to pay?</h1>
-				</div>
-				<PaymentCards />
+
+				<main
+					style={{
+						fontFamily: 'Roboto',
+						marginTop: 90,
+						float: 'left',
+						width: '100%',
+						height: '100%',
+						paddingLeft: 60
+					}}
+					className="row"
+				>
+					<div style={{ textAlign: 'center' }}>
+						<h1>Which fee do you want to pay?</h1>
+					</div>
+					<PaymentCards />
+				</main>
 			</React.Fragment>
 		);
 	}
