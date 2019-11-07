@@ -12,14 +12,14 @@ class Navbar extends Component {
 	};
 
 	styles1 = {
-		fontSize: 25,
-		marginRight: 30,
-		marginLeft: 30,
-		paddingTop: 12
+		fontSize: 17,
+		marginRight: 5,
+		marginLeft: 5,
+		paddingTop: 15
 	};
 	render() {
 		return (
-			<nav className="nav" style={this.styles} class="navbar navbar-expand-lg navbar-light fixed-top ">
+			<nav className="nav" style={this.styles} className="navbar navbar-expand-lg navbar-light fixed-top ">
 				<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 				<link
 					rel="stylesheet"
@@ -51,24 +51,35 @@ class Navbar extends Component {
 						Search
 					</button>
 				</form> */}
-				<div className="div" style={{ height: 60 }} class="collapse navbar-collapse" id="navbarCollapse">
-					<ul className="ul" style={{ height: 60, width: '100%' }} class="navbar-nav mr-auto row">
-						<li style={{ textAlign: 'center' }} class="nav-item col-4">
-							<Link style={this.styles1} class="nav-link" to="/">
-								<i style={{ marginRight: 20 }} class="fa fa-lg fa-address-card" />
-								<span>Motor Vehicle Record</span>
+				<div className="div" style={{ height: 60 }} className="collapse navbar-collapse" id="navbarCollapse">
+					<div className="col-6">Logo</div>
+					<ul
+						className="ul col-6"
+						style={{ marginRight: 0, float: 'right', height: 60, width: '60%' }}
+						className="navbar-nav row"
+					>
+						<li style={{ textAlign: 'center' }} className="nav-item col-3">
+							<Link style={this.styles1} className="nav-link" to="/">
+								<i style={{ marginRight: 5 }} className="fa fa-lg fa-home" />
+								<span>home</span>
 							</Link>
 						</li>
-						<li style={{ textAlign: 'center' }} class="nav-item col-4">
-							<Link style={this.styles1} class="nav-link" to="/payments">
-								<i style={{ marginRight: 20 }} class="fa fa-lg fa-credit-card" />
-								Pay My Fees
+						<li style={{ textAlign: 'center' }} className="nav-item col-3">
+							<Link style={this.styles1} className="nav-link" to="/">
+								<i style={{ marginRight: 5 }} className="fa fa-lg fa-address-card" />
+								<span>record</span>
 							</Link>
 						</li>
-						<li style={{ textAlign: 'center' }} class="nav-item col-4">
-							<Link style={this.styles1} class="nav-link " to="/notifications">
-								<i style={{ marginRight: 20 }} class="fa fa-lg fa-bell" />
-								Notifications
+						<li style={{ textAlign: 'center' }} className="nav-item col-3">
+							<Link style={this.styles1} className="nav-link" to="/payments">
+								<i style={{ marginRight: 5 }} className="fa fa-lg fa-credit-card" />
+								fees
+							</Link>
+						</li>
+						<li style={{ textAlign: 'center' }} className="nav-item col-3">
+							<Link style={this.styles1} className="nav-link " to="/notifications">
+								<i style={{ marginRight: 5 }} className="fa fa-lg fa-bell" />
+								notifications
 							</Link>
 						</li>
 					</ul>

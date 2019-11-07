@@ -5,7 +5,7 @@ import Notifications from "./Pages/notifications";
 // import Navbar from './components/Navbar';
 // import First from './components/First';
 // import Second from './components/Second';
-import {BrowserRouter as Router,Route,Switch,Link,Redirect} from "react-router-dom";
+import {BrowserRouter as Router,Route} from "react-router-dom";
 class App extends Component {
 	state = {};
 	render() {

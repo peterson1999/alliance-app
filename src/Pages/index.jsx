@@ -18,12 +18,12 @@ class Index extends Component {
 						height: '100%',
 						paddingLeft: 60
 					}}
-					class="row"
+					className="row"
 				>
-					<div style={{ maxWidth: 400 }} class="col-sm-3">
+					<div style={{ maxWidth: 400 }} className="col-sm-3">
 						<First />
 					</div>
-					<div style={{ marginLeft: 30 }} class="col-sm-8">
+					<div style={{ marginLeft: 30 }} className="col-sm-8">
 						<Second />
 					</div>
 				</main>

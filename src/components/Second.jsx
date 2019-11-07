@@ -25,12 +25,14 @@ class Second extends Component {
 	render() {
 		return (
 			<div styles={{ marginLeft: 30 }}>
-				<h1>Peterson Co</h1>
-				<p style={{ color: '#0099CC', fontSize: 30 }}>License</p>
+				<h1 style={{ marginBottom: 0 }}>
+					<strong>Peterson Co</strong>
+				</h1>
+				<p style={{ color: '#808080', fontSize: 25 }}>License</p>
 				<Score />
 				<div style={this.wrapper} className="wrapper">
-					<p style={{ marginBottom: 0, color: '#808080', fontSize: 20 }}>Timeline</p>
-					<div style={this.line} class="line" />
+					<p style={{ marginBottom: 0, color: 'rgb(0, 178, 222)', fontSize: 17 }}>Timeline</p>
+					<div style={this.line} className="line" />
 				</div>
 				<Cards />
 				<Cards />
