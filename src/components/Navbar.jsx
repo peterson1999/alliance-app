@@ -5,7 +5,7 @@ class Navbar extends Component {
 	state = {};
 	styles = {
 		height: 60,
-		backgroundColor: 'white',
+		backgroundColor: '#f7f7f7',
 		borderBottom: 'solid',
 		borderWidth: 0.1,
 		borderColor: '#D3D3D3'
@@ -65,7 +65,7 @@ class Navbar extends Component {
 							</Link>
 						</li>
 						<li style={{ textAlign: 'center' }} className="nav-item col-3">
-							<Link style={this.styles1} className="nav-link" to="/">
+							<Link style={this.styles1} className="nav-link" to="/record">
 								<i style={{ marginRight: 5 }} className="fa fa-lg fa-address-card" />
 								<span>record</span>
 							</Link>
