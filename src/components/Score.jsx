@@ -44,7 +44,7 @@ class Score extends Component {
 					href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 				/>
 				<div className="div" style={{ marginTop: 25, marginBottom: 25 }}>
-					<h2 className="h2" style={{}}>
+					<h2 className="h2" style={{ fontSize: 20, color: 'skyblue' }}>
 						Total Points: {this.state.score.value}{' '}
 					</h2>
 

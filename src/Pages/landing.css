@@ -1,0 +1,52 @@
+header,
+h3,
+.lead {
+	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h1 {
+	margin-bottom: 15px;
+}
+h3 {
+	font-weight: 700px;
+}
+.mb-5,
+.my-5 {
+	margin-bottom: 20px !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	margin-bottom: 0.5rem;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.lead {
+	color: #808080;
+}
+
+.showcase .showcase-img {
+	min-height: 30rem;
+	background-size: cover;
+}
+.showcase .showcase-text {
+	padding: 7rem;
+}
+.overlay {
+	position: absolute;
+	background-color: #212529;
+	height: 66.8%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: .3;
+}
