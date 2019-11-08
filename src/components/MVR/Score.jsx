@@ -50,7 +50,7 @@ class Score extends Component {
 
 					{/* <Icon>star</Icon> */}
 				</div>
-				<div style={{ marginBottom: 25 }}>
+				<div style={{ marginTop: 25, marginBottom: 25, position: 'absolute', left: '20%', right: '20%' }}>
 					<span className="span" style={{ color: '#d6d3d3', fontSize: 25, marginRight: 10 }}>
 						{this.state.stars.map((c) => <span className={c.value} />)}
 					</span>
