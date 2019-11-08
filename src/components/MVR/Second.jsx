@@ -21,7 +21,7 @@ class Second extends Component {
 
 	div = {
 		backgroundColor: 'white',
-		padding: 20,
+
 		border: 'solid 0.5px',
 		borderColor: '#c7c7c7'
 	};
@@ -36,8 +36,9 @@ class Second extends Component {
 					<div style={{ display: 'flex', flexDirection: 'row', marginTop: 40, marginBottom: 40 }}>
 						<div
 							style={{
-								marginRight: 83,
-								marginLeft: 83
+								marginRight: 0,
+								marginLeft: 60,
+								width: '50%'
 							}}
 						>
 							<div style={this.wrapper} className="wrapper">
@@ -131,13 +132,30 @@ class Second extends Component {
 												</p>
 											</td>
 										</tr>
+										<tr>
+											<td>
+												<p>Nationality:</p>
+											</td>
+											<td>
+												<p style={{ color: 'rgb(148, 148, 148)' }}>Filipino</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Height and Weight:</p>
+											</td>
+											<td>
+												<p style={{ color: 'rgb(148, 148, 148)' }}>182 cm, 70kg</p>
+											</td>
+										</tr>
 									</table>
 								</div>
 							</div>
 						</div>
 						<div
 							style={{
-								marginRight: 83
+								marginRight: 40,
+								width: '50%'
 							}}
 						>
 							{' '}
@@ -151,27 +169,70 @@ class Second extends Component {
 								className="License"
 								style={{ display: 'flex', flexDirection: 'row', marginBottom: 30 }}
 							>
-								<div className="section" style={{ marginRight: 50, fontSize: 20 }}>
-									<p className="paragraph">
-										<span className="span1">License Type:</span> (License)
-									</p>
-									<p className="paragraph">
-										<span className="span1">Date Issued:</span> 04/06/98
-									</p>
-									<p className="paragraph">
-										<span className="span1">Date of Expiry:</span> 04/08/32
-									</p>
+								<div className="section" style={{ fontSize: 20 }}>
+									<table>
+										<tr>
+											<td style={{ width: 200 }}>
+												<p>License Number</p>
+											</td>
+											<td>
+												<p style={{ color: 'rgb(148, 148, 148)' }}>G06-18-003177</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Restriction Numbers:</p>
+											</td>
+											<td>
+												<p style={{ color: 'rgb(148, 148, 148)' }}>(1,2)</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Date Issued:</p>
+											</td>
+											<td>
+												<p style={{ color: 'rgb(148, 148, 148)' }}>April 3, 2018</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Date of Expiry:</p>
+											</td>
+											<td>
+												<p style={{ color: 'rgb(148, 148, 148)' }}>April 3, 2023</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Agency:</p>
+											</td>
+											<td>
+												<p style={{ color: 'rgb(148, 148, 148)' }}>G06</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Conditions:</p>
+											</td>
+											<td>
+												<p style={{ color: 'rgb(148, 148, 148)' }}>A</p>
+											</td>
+										</tr>
+									</table>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div style={this.wrapper} className="wrapper">
-						<p style={{ marginBottom: 0, color: 'rgb(148, 148, 148)', fontSize: 28 }}>timeline</p>
-						<div style={this.line} className="line" />
+					<div style={{ padding: 60 }}>
+						<div style={this.wrapper} className="wrapper">
+							<p style={{ marginBottom: 0, color: 'rgb(148, 148, 148)', fontSize: 28 }}>timeline</p>
+							<div style={this.line} className="line" />
+						</div>
+						<Cards />
+						<Cards />
+						<Cards />
 					</div>
-					<Cards />
-					<Cards />
-					<Cards />
 				</div>
 			</React.Fragment>
 		);

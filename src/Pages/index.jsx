@@ -14,7 +14,7 @@ class Index extends Component {
 						fontFamily: 'Roboto',
 						paddingTop: 90,
 						float: 'left',
-						width: '100%',
+						width: '102%',
 						height: '100%',
 						paddingLeft: 60,
 						backgroundColor: '#e9f7ff'
