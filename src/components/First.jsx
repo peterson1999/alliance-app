@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import jungkook from './jungkook-1.jpg';
+import Score from './Score';
 import './First.css';
 class First extends Component {
 	state = {};
@@ -26,19 +27,36 @@ class First extends Component {
 	};
 	render() {
 		return (
-			<div className="Body" style={{ marginLeft: 30 }}>
+			<div className="Body" style={{ backgroundColor: 'skyblue' }}>
 				<div
 					className="image"
 					style={{
+						textAlign: 'center'
 						// borderRadius: 4,
 						// borderWidth: 0.1,
 						// borderColor: 'grey',
 						// border: 'solid',
 					}}
 				>
-					<img style={{ height: '100%', width: '100%' }} src={jungkook} alt="" />
+					<img
+						style={{
+							height: 300,
+							width: 300,
+							borderRadius: '50%',
+							marginTop: 20
+						}}
+						src={jungkook}
+						alt=""
+					/>
 				</div>
-				<div style={this.wrapper} className="wrapper">
+				<div style={{ textAlign: 'center' }}>
+					<h1 style={{ marginBottom: 0 }}>
+						<strong>Peterson Co</strong>
+					</h1>
+					<p style={{ color: '#808080', fontSize: 25 }}>License</p>
+					<Score />
+				</div>
+				{/* <div style={this.wrapper} className="wrapper">
 					<p style={{ marginBottom: 0, color: 'rgb(0, 178, 222)', fontSize: 17 }}>Identifying Information</p>
 					<div style={this.line} className="line" />
 				</div>
@@ -84,7 +102,7 @@ class First extends Component {
 							<span className="span1">Date of Expiry:</span> 04/08/32
 						</p>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		);
 	}

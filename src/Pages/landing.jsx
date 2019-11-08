@@ -30,7 +30,7 @@ class Home extends Component {
 					style={{ backgroundColor: '#808080', backgroundImage: `url(${highway})` }}
 					className="masthead text-white text-center"
 				>
-					<div className="overlay" />
+					{/* <div className="overlay" /> */}
 					<div className="container">
 						<div className="row">
 							<div style={{ marginTop: 250, zIndex: 2 }} lassName="col-xl-9 mx-auto">
@@ -58,7 +58,7 @@ class Home extends Component {
 										</div>
 									</div>
 								</form> */}
-								<p style={{ fontSize: 22 }}>
+								<p style={{ opacity: 0.7, fontSize: 22 }}>
 									A new and convenient way for Filipinos to document their driving experience ensuring
 									their rights as a vehicle owner.
 								</p>
@@ -189,7 +189,7 @@ class Home extends Component {
 					</div>
 				</section>
 				<section style={{ backgroundColor: 'rgb(248, 249, 250)' }} className="call-to-action  text-center">
-					<div className="overlay" />
+					{/* <div className="overlay" /> */}
 					<div className="container">
 						<div className="row">
 							<div style={{ marginTop: 110 }} className="col-xl-9 mx-auto">
