@@ -3,6 +3,7 @@ import Index from "./Pages/index";
 import Payments from "./Pages/payments";
 import Notifications from "./Pages/notifications";
 import Home from "./Pages/landing";
+import Forms from "./Pages/form";
 // import Navbar from './components/Navbar';
 // import First from './components/First';
 // import Second from './components/Second';
@@ -15,6 +16,7 @@ class App extends Component {
 				<Route exact path ="/record" component={Index}></Route>
 				<Route exact path ="/payments" component={Payments}></Route>
 				<Route exact path ="/notifications" component={Notifications}></Route>
+				<Route exact path ="/report" component={Forms}></Route>
 				<Route exact path ="/" component={Home}></Route>
 			</Router>
 		);
