@@ -27,36 +27,43 @@ class First extends Component {
 	};
 	render() {
 		return (
-			<div className="Body" style={{ backgroundColor: 'skyblue' }}>
-				<div
-					className="image"
-					style={{
-						textAlign: 'center'
-						// borderRadius: 4,
-						// borderWidth: 0.1,
-						// borderColor: 'grey',
-						// border: 'solid',
-					}}
-				>
-					<img
+			<React.Fragment>
+				<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet" />
+				<div className="Body" style={{ backgroundColor: 'skyblue', paddingBottom: 1 }}>
+					<div
+						className="image"
 						style={{
-							height: 300,
-							width: 300,
-							borderRadius: '50%',
-							marginTop: 20
+							textAlign: 'center'
+							// borderRadius: 4,
+							// borderWidth: 0.1,
+							// borderColor: 'grey',
+							// border: 'solid',
 						}}
-						src={jungkook}
-						alt=""
-					/>
-				</div>
-				<div style={{ textAlign: 'center' }}>
-					<h1 style={{ marginBottom: 0 }}>
-						<strong>Peterson Co</strong>
-					</h1>
-					<p style={{ color: '#808080', fontSize: 25 }}>License</p>
-					<Score />
-				</div>
-				{/* <div style={this.wrapper} className="wrapper">
+					>
+						<img
+							style={{
+								height: 300,
+								width: 300,
+								borderRadius: '50%',
+								marginTop: 20
+							}}
+							src={jungkook}
+							alt=""
+						/>
+					</div>
+					<div style={{ textAlign: 'center' }}>
+						<h1
+							style={{
+								marginBottom: 12,
+								fontSize: 30
+							}}
+						>
+							<strong>PETERSON CO</strong>
+						</h1>
+						<p style={{ color: 'rgb(249, 249, 249)', fontSize: 25 }}>License</p>
+						<Score />
+					</div>
+					{/* <div style={this.wrapper} className="wrapper">
 					<p style={{ marginBottom: 0, color: 'rgb(0, 178, 222)', fontSize: 17 }}>Identifying Information</p>
 					<div style={this.line} className="line" />
 				</div>
@@ -103,7 +110,8 @@ class First extends Component {
 						</p>
 					</div>
 				</div> */}
-			</div>
+				</div>
+			</React.Fragment>
 		);
 	}
 }

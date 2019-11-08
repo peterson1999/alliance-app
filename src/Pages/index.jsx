@@ -8,7 +8,7 @@ class Index extends Component {
 		return (
 			<React.Fragment>
 				<Navbar />
-				<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+				<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet" />
 				<main
 					style={{
 						fontFamily: 'Roboto',
@@ -26,7 +26,8 @@ class Index extends Component {
 							maxWidth: 400,
 							backgroundColor: 'white',
 							boxShadow: '-8px 14px 4px 0px #a2a2a2',
-							padding: 0
+							padding: 0,
+							height: 590
 						}}
 						className="col-sm-3"
 					>
