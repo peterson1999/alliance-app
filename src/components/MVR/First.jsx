@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import jungkook from './jungkook-1.jpg';
+import jungkook from '../component images/jungkook-1.jpg';
 import Score from './Score';
-import './First.css';
+import '../component css/First.css';
 class First extends Component {
 	state = {};
 

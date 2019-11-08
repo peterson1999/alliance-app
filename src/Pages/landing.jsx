@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
-import './landing.css';
-import record from './record.png';
-import pay from './pay.jpg';
-import notify from './notify.jpg';
-import highway from './highway.jpg';
+import './pages css/landing.css';
+import record from './pages images/record.png';
+import pay from './pages images/pay.jpg';
+import notify from './pages images/notify.jpg';
+import highway from './pages images/highway.jpg';
 import { Link } from 'react-router-dom';
 class Home extends Component {
 	state = {};

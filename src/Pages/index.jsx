@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
-import First from '../components/First';
-import Second from '../components/Second';
+import First from '../components/MVR/First';
+import Second from '../components/MVR/Second';
 class Index extends Component {
 	state = {};
 	render() {
