@@ -39,13 +39,7 @@ class Pcards extends Component {
 						Deadline: (Date)<span style={{ float: 'right' }}>PHP 10000.00</span>
 					</div>
 					<div style={{ fontSize: 30, float: 'right' }}>
-						<button
-							style={{ backgroundColor: '#90c3fb', fontSize: 30 }}
-							type="button"
-							className="btn"
-							data-toggle="modal"
-							data-target="#exampleModalCenter"
-						>
+						<button style={{ backgroundColor: '#90c3fb', fontSize: 30 }} type="button" className="btn">
 							Primary
 						</button>
 					</div>
