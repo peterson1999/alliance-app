@@ -1,14 +1,54 @@
 import React, { Component } from "react";
-
+import Window from "./Window";
+import { statement } from "@babel/template";
 class Status extends Component {
-  state = {
-    notiftext: "Lorem,dojcdjcmaocmskmcskcas",
-    date: "October 9, 2019"
-  };
+  state = {};
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      showComponent: false,
+      notiftext: "Lorem,dojcdjcmaocmskmcskcas",
+      date: "October 9, 2019",
+      location: "location"
+    };
+    this.popup_ques1 = this.popup_ques1.bind(this);
+    this.hide_overlay1 = this.hide_overlay1.bind(this);
+  }
+
+  popup_ques1() {
+    this.setState({
+      showComponent: true
+    });
+  }
+
+  statement() {
+    const statement = this.state.notiftext;
+    return statement;
+  }
+
+  date() {
+    const date = this.state.date;
+    return date;
+  }
+
+  location() {
+    const location = this.state.location;
+    return location;
+  }
+
+  hide_overlay1() {
+    this.setState({
+      showComponent: false
+    });
+  }
   render() {
     return (
       <React.Fragment>
-        <div style={{ height: 66, backgroundColor: "#64dd64" }}>
+        <div
+          style={{ height: 66, backgroundColor: "#64dd64" }}
+          onClick={this.popup_ques1}
+        >
           <p style={{ float: "left", paddingTop: 12, color: "white" }}>
             <i
               style={{
@@ -50,6 +90,15 @@ class Status extends Component {
             {this.state.date}
           </p>
         </div>
+
+        {this.state.showComponent && (
+          <Window
+            date={this.date()}
+            statement={this.statement()}
+            location={this.location()}
+            hideOverlay={this.hide_overlay1}
+          />
+        )}
       </React.Fragment>
     );
   }
