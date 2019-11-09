@@ -11,8 +11,20 @@ class Notif extends Component {
           rel="stylesheet"
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
         />
-        <div id="notificationContainer" onClick={this.props.hideOverlay}>
-          <div id="notificationTitle">Notifications</div>
+        <div id="notificationContainer">
+          <div id="notificationTitle">
+            Notifications{" "}
+            <button
+              onClick={this.props.hideOverlay}
+              style={{
+                float: "right",
+                border: "none",
+                backgroundColor: "white"
+              }}
+            >
+              X
+            </button>
+          </div>
           <div id="notificationsBody" class="notifications">
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
@@ -21,7 +33,6 @@ class Notif extends Component {
               <li class="list-group-item">
                 <Status />
               </li>
-              {/* <li class="list-group-item">Vestibulum at eros</li> */}
             </ul>
           </div>
           <div id="notificationFooter">
