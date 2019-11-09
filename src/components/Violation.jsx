@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 
 class Violations extends Component {
-  state = {};
+  state = {
+    notiftext: "Lorem,dojcdjcmaocmskmcskcas",
+    date: "October 9, 2019"
+  };
   render() {
     return (
       <React.Fragment>
@@ -26,25 +29,25 @@ class Violations extends Component {
               style={{
                 position: "absolute",
 
-                left: "18%",
+                left: "24%",
 
-                top: "17%"
+                top: "36%"
               }}
             >
-              Lorem,dojcdjcmaocmskmcskcas
+              {this.state.notiftext}
             </span>
           </p>
           <p
             style={{
               position: "absolute",
               left: "71%",
-              top: "23%",
-              fontSize: "small",
+              top: "68%",
+              fontSize: 10,
               color: "white",
               width: 100
             }}
           >
-            October 9, 2019
+            {this.state.date}
           </p>
         </div>
       </React.Fragment>

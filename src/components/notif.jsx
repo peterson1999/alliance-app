@@ -14,8 +14,15 @@ class Notif extends Component {
         <div id="notificationContainer" onClick={this.props.hideOverlay}>
           <div id="notificationTitle">Notifications</div>
           <div id="notificationsBody" class="notifications">
-            <Violations />
-            <Status />
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <Violations />
+              </li>
+              <li class="list-group-item">
+                <Status />
+              </li>
+              {/* <li class="list-group-item">Vestibulum at eros</li> */}
+            </ul>
           </div>
           <div id="notificationFooter">
             <a href="#">See All</a>
