@@ -85,7 +85,6 @@ class PaymentCards extends Component {
 						/> */}
 							Pay
 						</button>
-
 						<PModal
 							fine={item.fine}
 							show={this.state.modalPShow}

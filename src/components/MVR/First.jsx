@@ -69,53 +69,6 @@ class First extends Component {
 						<p style={{ color: 'rgb(249, 249, 249)', fontSize: 25 }}>License</p>
 						<Score />
 					</div>
-					{/* <div style={this.wrapper} className="wrapper">
-					<p style={{ marginBottom: 0, color: 'rgb(0, 178, 222)', fontSize: 17 }}>Identifying Information</p>
-					<div style={this.line} className="line" />
-				</div>
-				<div className="Identity" style={{ display: 'flex', flexDirection: 'row', marginBottom: 15 }}>
-					<div className="section" style={{ marginRight: 50, fontSize: 20 }}>
-						<p className="paragraph">
-							<span className="span1">First Name:</span> Peterson
-						</p>
-						<p className="paragraph">
-							<span className="span1">Last Name:</span> Co
-						</p>
-						<p className="paragraph">
-							<span className="span1">Middle Name:</span> Ng
-						</p>
-						<p className="paragraph">
-							<span className="span1">Contact Number:</span>
-						</p>
-						<p className="paragraph">
-							<span className="span1">Sex:</span> M
-						</p>
-						<p className="paragraph">
-							<span className="span1">Birthdate:</span> 04/05/99
-						</p>
-						<p className="paragraph">
-							<span className="span1">Address:</span>
-							<br />8 Prince Road. Nichol's Park <br />Brgy.Guadalupe, Cebu City
-						</p>
-					</div>
-				</div>
-				<div style={this.wrapper} className="wrapper">
-					<p style={{ marginBottom: 0, color: 'rgb(0, 178, 222)', fontSize: 17 }}>License Information</p>
-					<div style={this.line} className="line" />
-				</div>
-				<div className="License" style={{ display: 'flex', flexDirection: 'row', marginBottom: 30 }}>
-					<div className="section" style={{ marginRight: 50, fontSize: 20 }}>
-						<p className="paragraph">
-							<span className="span1">License Type:</span> (License)
-						</p>
-						<p className="paragraph">
-							<span className="span1">Date Issued:</span> 04/06/98
-						</p>
-						<p className="paragraph">
-							<span className="span1">Date of Expiry:</span> 04/08/32
-						</p>
-					</div>
-				</div> */}
 				</div>
 			</React.Fragment>
 		);
