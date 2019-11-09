@@ -117,7 +117,7 @@ class PaymentCards extends Component {
 							right: '43%'
 						}}
 					>
-						<Pagination />
+						{/* <Pagination /> */}
 					</div>
 				</div>
 			</div>

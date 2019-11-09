@@ -10,7 +10,7 @@ class Window extends Component {
           backgroundColor: "white",
           height: 250,
           width: 500,
-          left: "-140%",
+          left: "-190%",
           border: "solid 1px",
           borderColor: "#808080",
           top: "18%"

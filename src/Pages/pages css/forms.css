@@ -1,3 +1,7 @@
 h1 {
-	font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+
+form > div {
+  padding: 20px;
 }
