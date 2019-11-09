@@ -20,7 +20,6 @@ class PModal extends Component {
 					<Modal.Title id="contained-modal-title-vcenter">Pay Fee</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
-					<h4>PHP {this.props.fine}</h4>
 					<div>
 						<PayPalButton
 							// currency="PHP"

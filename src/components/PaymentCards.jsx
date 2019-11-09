@@ -4,15 +4,15 @@ import PModal from './PModal.jsx';
 import axios from 'axios';
 import Pcards from './Pcards';
 
-const data = [
-	{
-		violation: 'Double Parking',
-		description:
-			'YOU DOUBLE PARKED! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.',
-		deadline: 'October 23, 2019 ',
-		fine: 10000
-	}
-];
+// const data = [
+// 	{
+// 		violation: 'Double Parking',
+// 		description:
+// 			'YOU DOUBLE PARKED! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.',
+// 		deadline: 'October 23, 2019 ',
+// 		fine: 10000
+// 	}
+// ];
 class PaymentCards extends Component {
 	constructor(props) {
 		super(props);
@@ -85,11 +85,7 @@ class PaymentCards extends Component {
 						/> */}
 							Pay
 						</button>
-						<PModal
-							fine={item.fine}
-							show={this.state.modalPShow}
-							onHide={() => this.setState({ modalPShow: false })}
-						/>
+						<PModal show={this.state.modalPShow} onHide={() => this.setState({ modalPShow: false })} />
 					</div>
 				</div>
 			</div>

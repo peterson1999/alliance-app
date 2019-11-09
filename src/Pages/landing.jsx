@@ -133,15 +133,14 @@ class Home extends Component {
 								<img style={{ height: '100%', width: '100%' }} src={record} alt="" />
 							</div>
 							<div className="col-lg-6 order-lg-1 my-auto showcase-text">
-								<h2>Fully Responsive Design</h2>
+								<h2>Motor Vehicle Record</h2>
 								<p className="lead mb-0">
-									When you use a theme created by Start Bootstrap, you know that the theme will look
-									great on any device, whether it's a phone, tablet, or desktop the page will behave
-									responsively!
+									Get to see your timeline of violations and payments with all your details in one
+									place. Learn from your past mistakes and be a better driver.
 								</p>
 								<div style={{ marginTop: 20 }}>
 									<Link style={{ fontWeight: 700 }} className="btn btn-primary btn-lg" to="/record">
-										Motor Vehicle Record
+										View Record
 									</Link>
 								</div>
 							</div>
@@ -151,15 +150,15 @@ class Home extends Component {
 								<img style={{ height: '100%', width: '100%' }} src={notify} alt="" />
 							</div>
 							<div className="col-lg-6 my-auto showcase-text">
-								<h2>Updated For Bootstrap 4</h2>
+								<h2>Driver Score</h2>
 								<p className="lead mb-0">
-									Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in
-									mobile responsive web development! All of the themes on Start Bootstrap are now
-									using Bootstrap 4!
+									Be aware of your current standing with the help of our Driver Score. You can now
+									give insurance companies the confidence they need in your driving skills. Be careful
+									though, don't let it get too low.
 								</p>
 								<div style={{ marginTop: 20 }}>
 									<Link style={{ fontWeight: 700 }} className="btn btn-primary btn-lg" to="/payments">
-										Payments
+										Go Now
 									</Link>
 								</div>
 							</div>
@@ -169,11 +168,11 @@ class Home extends Component {
 								<img style={{ height: '100%', width: '100%' }} src={pay} alt="" />
 							</div>
 							<div className="col-lg-6 order-lg-1 my-auto showcase-text">
-								<h2>Easy to Use &amp; Customize</h2>
+								<h2>Online Payments</h2>
 								<p className="lead mb-0">
-									Landing Page is just HTML and CSS with a splash of SCSS for users who demand some
-									deeper customization options. Out of the box, just add your content and images, and
-									your new landing page will be ready to go!
+									No longer will you line up for hours just to pay your bills now that MyDrive has the
+									online payment process. Pay via PayPal, Visa, MasterCard, or any available online
+									transaction system.
 								</p>
 								<div style={{ marginTop: 20 }}>
 									<Link
@@ -181,7 +180,7 @@ class Home extends Component {
 										className="btn btn-primary btn-lg"
 										to="/notifications"
 									>
-										Notifications
+										Payments
 									</Link>
 								</div>
 							</div>
@@ -224,10 +223,10 @@ class Home extends Component {
 				</section>
 				<footer style={{ backgroundColor: '#007bff' }} class="page-footer font-small blue">
 					<div style={{ color: 'white' }} class="footer-copyright text-center py-3">
-						© 2018 Copyright:
+						© 2019 Copyright
 						<a style={{ color: 'white' }} href="#">
 							{' '}
-							Website.com
+							MyDrive
 						</a>
 					</div>
 				</footer>
