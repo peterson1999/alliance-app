@@ -36,7 +36,41 @@ class Second extends Component {
 	};
 
 	renderProf = () => {
-		return this.state;
+		return this.state.infoID.map((item, i) => (
+			<div className="Body" style={{ backgroundColor: 'skyblue', paddingBottom: 1 }}>
+				<div
+					className="image"
+					style={{
+						textAlign: 'center'
+					}}
+				>
+					<img
+						style={{
+							height: 300,
+							width: 300,
+							borderRadius: '50%',
+							marginTop: 20
+						}}
+						src={jungkook}
+						alt=""
+					/>
+				</div>
+				<div style={{ textAlign: 'center' }}>
+					<h1
+						style={{
+							marginBottom: 12,
+							fontSize: 30
+						}}
+					>
+						<strong>
+							{item.first_name} {item.last_name}
+						</strong>
+					</h1>
+					<p style={{ color: 'rgb(249, 249, 249)', fontSize: 25 }}>{this.state.infoID.license_number}</p>
+					<Score points={item.points} />
+				</div>
+			</div>
+		));
 	};
 
 	renderInfo = () => {
@@ -274,41 +308,7 @@ class Second extends Component {
 					className="col-sm-3"
 				>
 					<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet" />
-					<div className="Body" style={{ backgroundColor: 'skyblue', paddingBottom: 1 }}>
-						<div
-							className="image"
-							style={{
-								textAlign: 'center'
-								// borderRadius: 4,
-								// borderWidth: 0.1,
-								// borderColor: 'grey',
-								// border: 'solid',
-							}}
-						>
-							<img
-								style={{
-									height: 300,
-									width: 300,
-									borderRadius: '50%',
-									marginTop: 20
-								}}
-								src={jungkook}
-								alt=""
-							/>
-						</div>
-						<div style={{ textAlign: 'center' }}>
-							<h1
-								style={{
-									marginBottom: 12,
-									fontSize: 30
-								}}
-							>
-								<strong>PETERSON CO</strong>
-							</h1>
-							<p style={{ color: 'rgb(249, 249, 249)', fontSize: 25 }}>License</p>
-							<Score />
-						</div>
-					</div>
+					{this.renderProf()}
 				</div>
 
 				<div style={{ marginLeft: 30 }} className="col-sm-8">

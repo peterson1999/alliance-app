@@ -34,15 +34,15 @@ class PaymentCards extends Component {
 	};
 
 	renderPayments = () => {
-		const newPay = this.state.payments;
-		console.log(this.state.payments);
-		return newPay.map((item, i) => (
+		console.log(this.state.payments[0]);
+		return this.state.payments.map((item, i) => (
 			<div
 				style={{
 					marginBottom: 20,
 					marginLeft: 10,
 					borderRadius: 10,
-					marginRight: 10
+					marginRight: 10,
+					width: '90vw'
 				}}
 				className="card"
 				key={i}
@@ -50,7 +50,7 @@ class PaymentCards extends Component {
 				<div style={{ fontSize: 30, backgroundColor: '#90c3fb' }} className="card-header card-primary">
 					{' '}
 					<span style={{ marginRight: 10 }}>
-						<b>{item.violation}</b>
+						<b>{item.violation.name}</b>
 					</span>
 				</div>
 				<div className="card-body">
@@ -63,11 +63,11 @@ class PaymentCards extends Component {
 						}}
 						className="blockquote mb-0"
 					>
-						<p>{item.description}</p>
+						<p>{item.violation.description}</p>
 					</blockquote>
 					<div style={{ fontSize: 30, marginBottom: 0, marginTop: 10 }}>
 						Deadline: {item.deadline}
-						<span style={{ float: 'right' }}>PHP {item.fine}</span>
+						<span style={{ float: 'right' }}>PHP {item.amount}</span>
 					</div>
 					<div style={{ fontSize: 30, float: 'right' }}>
 						<button
@@ -77,12 +77,12 @@ class PaymentCards extends Component {
 							onClick={() => this.setState({ modalPShow: true })}
 						>
 							{/* <PayPalButton
-								// currency="PHP"
-								amount={item.fine}
-								onSuccess={(details, data) => {
-									alert('Transaction completed by ' + details.payer.name.given_name);
-								}}
-							/> */}
+							// currency="PHP"
+							amount={item.fine}
+							onSuccess={(details, data) => {
+								alert('Transaction completed by ' + details.payer.name.given_name);
+							}}
+						/> */}
 							Pay
 						</button>
 

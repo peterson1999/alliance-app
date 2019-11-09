@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import '../component css/Score.css';
 class Score extends Component {
+	constructor(props) {
+		super(props);
+	}
 	state = {
 		score: {
-			value: 19
+			value: !this.props.points ? 0 : this.props.points
 		},
 		stars: [
 			{ id: 1, value: 'fa fa-star' },
