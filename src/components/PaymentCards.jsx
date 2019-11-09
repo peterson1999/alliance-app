@@ -27,12 +27,14 @@ class PaymentCards extends Component {
 	}
 
 	refresh = () => {
-		axios.get('/v1/fees/').then((res) => this.setState({ payments: res.data })).catch((err) => console.log(err));
+		axios
+			.get('/v1/fees/')
+			.then((res) => this.setState({ payments: res.data.results }))
+			.catch((err) => console.log(err));
 	};
 
 	renderPayments = () => {
-		const newPay = [];
-		for (var i in this.state.payments) newPay.push([ i, this.state.payments[i] ]);
+		const newPay = this.state.payments;
 		console.log(this.state.payments);
 		return newPay.map((item, i) => (
 			<div

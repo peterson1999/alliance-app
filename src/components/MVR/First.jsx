@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import jungkook from '../component images/jungkook-1.jpg';
 import Score from './Score';
 import '../component css/First.css';
@@ -21,6 +22,11 @@ class First extends Component {
 	line = {
 		borderTop: 'solid',
 		flexGrow: 1,
+		// <div style={{ fontSize: 30, backgroundColor: '#90c3fb' }} className="card-header card-primary">
+		// 	{' '}
+		// 	<span style={{ marginRight: 10 }}>
+		// 		<b>{item.violation}</b>
+		// 	</span>
 		borderWidth: 2,
 		margin: 10,
 		borderColor: '#808080'
